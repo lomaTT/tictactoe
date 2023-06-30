@@ -2,19 +2,19 @@ import Image from "next/image";
 import avatarSrc from "./avatar.png";
 import clsx from "clsx";
 
-export function Profile({ className }) {
+export function Profile({ className, name, rating, avatar = avatarSrc }) {
     return (
         <div className={clsx("flex items-center gap-2 text-start text-teal-600", className)}>
             <Image
-                src={avatarSrc}
+                src={avatar}
                 alt="avatar"
                 width={48}
                 height={48}
                 unoptimized
             />
-            <div className="leading-none">
-                <div className="text-lg leading-tight truncate">llleshik</div>
-                <div className="text-slate-400 text-xs leading-tight">Rating: 322</div>
+            <div className="leading-none overflow-hidden">
+                <div className="text-lg leading-tight truncate">{name}</div>
+                <div className="text-slate-400 text-xs leading-tight">Rating: {rating}</div>
             </div>
 
             {/* <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

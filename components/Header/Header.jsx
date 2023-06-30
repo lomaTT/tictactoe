@@ -12,7 +12,7 @@ export function Header() {
             <UiButton className="w-44" variant="primary" size="lg">Play</UiButton>
             {/* <button className="w-44 bg-teal-600 hover:bg-teal-500 transition-colors text-white rounded-lg px-5 py-2 text-2xl leading-tigth">Play</button> */}
             <button className="ml-auto flex items-center gap-2 text-start text-teal-600 hover:text-teal-500 transition-colors w-lg">
-                <Profile />
+                <Profile name={"llleshik"} rating={322} />
                 <ArrowDownIcon />
             </button>
         </header>
